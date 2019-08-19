@@ -7,8 +7,8 @@ public class NIO {
     public static void main(String[] args) {
         try {
             long l = System.currentTimeMillis();
-           // NIO();
-           IO2();
+            NIO();
+           //IO2();
             long l1 =  System.currentTimeMillis();
             System.out.println(l1-l);
         }catch (Exception e){
@@ -26,11 +26,7 @@ public class NIO {
         FileChannel fileInputStreamChannel = fileInputStream.getChannel();
         FileChannel fileOutputStreamChannel = fileOutputStream.getChannel();
         ByteBuffer byteBuffer = ByteBuffer.allocate(1024*10);
-        while (true){
-            int read = fileInputStreamChannel.read(byteBuffer);
-            if (read==-1){
-                break;
-            }
+        while (fileInputStreamChannel.read(byteBuffer)>0){
             byteBuffer.flip();
             int write = fileOutputStreamChannel.write(byteBuffer);
             byteBuffer.clear();
