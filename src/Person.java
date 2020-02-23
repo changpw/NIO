@@ -29,8 +29,9 @@ public abstract class Person {
         System.out.println("MYINFO");
     }
 
+
     @Override
-    public String toString() {
+    public String toString()   {
         return "Person{" +
                 "name='" + name + '\'' +
                 ", age='" + age + '\'' +

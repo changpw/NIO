@@ -1,3 +1,7 @@
+/*
+*
+* 子类不能重写父类private的方法
+* */
 public class Student extends  Person implements Work{
 
     private String subject;
@@ -12,25 +16,24 @@ public class Student extends  Person implements Work{
     }
 
     @Override
-    public void UpWork() {
+    public void UpWork() throws RuntimeException  {
         System.out.println("Student up Work");
     }
 
+
     @Override
     public void sleep() {
-        System.out.println("STUDENT SLEEP");
+
     }
 
     @Override
     public void eat() {
         System.out.println("STUDENT EAT");
     }
-
     @Override
     public void work() {
         System.out.println("STUDENT Work");
     }
-
     @Override
     public String toString() {
         return "Person{" +
