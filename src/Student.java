@@ -9,6 +9,9 @@ public class Student extends  Person implements Work{
 //        super(name, age);
 //        this.subject=subject;
 //    }
+    public Student() {
+        super();
+    }
 
     public Student(String name, String age, String subject) {
         super(name, age);

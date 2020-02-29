@@ -1,6 +1,6 @@
 public abstract class Person {
-     String name;
-     String age;
+    public String name="zszs";
+    public   String age;
     public Person(){}
     public Person(String name, String age) {
         this.name = name;
