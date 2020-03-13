@@ -1,4 +1,14 @@
 public class Doctor extends Person implements Work {
+    @Override
+    public int getNumber() {
+        return 0;
+    }
+
+    @Override
+    public int getBigNumber() {
+        return 0;
+    }
+
     public Doctor(String name, String age) {
         super(name, age);
     }

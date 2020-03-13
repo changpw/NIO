@@ -3,6 +3,15 @@
 * 子类不能重写父类private的方法
 * */
 public class Student extends  Person implements Work{
+    @Override
+    public int getNumber() {
+        return 0;
+    }
+
+    @Override
+    public int getBigNumber() {
+        return 0;
+    }
 
     private String subject;
 //    public Student(String name, String age,String subject) {
